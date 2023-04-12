@@ -33,8 +33,8 @@ public class Main {
 
         root2.getRight().getRight().getRight().setRight(new Node(4));
 
-        root.print(System.out);
-        root2.print(System.out);
+        System.out.println(root.print());
+        System.out.println(root2.print());
         System.out.println(root.check(root2) ? "They are the same" : "They are different");
         System.out.println("The maximum depth is: " + root.findMaxLevel());
         System.out.println("The path to deepest node is: " + root.printMaxPath());

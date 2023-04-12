@@ -132,9 +132,9 @@ public class Node {
             traversePreOrder(sb, paddingForBoth, pointerForRight, node.getLeft());
         }
     }
-    public void print(PrintStream os) {
+    public StringBuilder print() {
         StringBuilder sb = new StringBuilder();
         traversePreOrder(sb, "", "", this);
-        os.print(sb);
+        return sb;
     }
 }
